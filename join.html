@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join | West Point Society of Switzerland</title>
+  <meta name="description" content="Membership in the West Point Society of Switzerland: who can join, what it involves, and how to sign up.">
+  <meta property="og:title" content="Join | West Point Society of Switzerland">
+  <meta property="og:description" content="Membership in the West Point Society of Switzerland: who can join, what it involves, and how to sign up.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://westpointswitzerland.org/join.html">
+  <meta property="og:url" content="https://westpointswitzerland.org/join.html">
+  <meta property="og:image" content="https://westpointswitzerland.org/assets/og-image.png">
+  <meta property="og:site_name" content="West Point Society of Switzerland">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="" width="48" height="48">
+        <span class="brand-name">West Point Society of Switzerland</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="switzerland.html">Switzerland</a></li>
+          <li><a href="join.html" aria-current="page">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="gray-line" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Join the society</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>Who can join</h2>
+        </div>
+        <div>
+          <p>Membership categories follow the framework of the West Point Association of Graduates.</p>
+          <ul>
+            <li>Graduates of the United States Military Academy at West Point living in Switzerland or nearby.</li>
+            <li>Former cadets who attended the Academy.</li>
+            <li>Spouses, widows, and widowers of graduates.</li>
+            <li>Friends of West Point: parents of cadets, former faculty and staff, and others with a close connection to the Academy.</li>
+          </ul>
+          <p>Graduates of the other U.S. service academies are welcome as guests at most events and are invited to join our shared gatherings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap split">
+        <div>
+          <h2>What membership involves</h2>
+        </div>
+        <div>
+          <dl class="facts">
+            <dt>Dues</dt><dd>None at present. [Update once the membership sets dues.]</dd>
+            <dt>Commitment</dt><dd>Come when you can. Volunteer if you like.</dd>
+            <dt>Communication</dt><dd>Occasional emails about events and society business. No newsletters you did not ask for.</dd>
+          </dl>
+          <div class="notice" style="margin-top:1.5rem">
+            <p>Please also <a href="https://www.westpointaog.org/" rel="noopener">update your address with WPAOG</a>. The Association assigns graduates to societies by residence, and an accurate record is what makes Switzerland count.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>Sign up</h2>
+          <p>We use your details only to run the society. See the <a href="privacy.html">privacy notice</a>.</p>
+        </div>
+        <div>
+          <form class="form" name="join" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company">
+            <input type="hidden" name="form-name" value="join">
+            <p class="honeypot"><label>Leave this field empty: <input name="company"></label></p>
+
+            <div class="form-row">
+              <label for="j-name">Full name</label>
+              <input id="j-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="j-email">Email</label>
+              <input id="j-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="j-affiliation">Connection to West Point</label>
+              <select id="j-affiliation" name="affiliation" required>
+                <option value="">Select one</option>
+                <option>Graduate</option>
+                <option>Former cadet</option>
+                <option>Spouse, widow, or widower of a graduate</option>
+                <option>Parent of a cadet or graduate</option>
+                <option>Former faculty or staff</option>
+                <option>Graduate of another U.S. service academy</option>
+                <option>Friend of West Point</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="j-class">Class year (if applicable)</label>
+              <input id="j-class" name="class_year" type="text" inputmode="numeric" placeholder="e.g. 2010">
+            </div>
+            <div class="form-row">
+              <label for="j-city">Town and canton</label>
+              <input id="j-city" name="city" type="text" autocomplete="address-level2" placeholder="e.g. Winterthur, ZH">
+            </div>
+            <div class="form-row">
+              <label for="j-notes">Anything you would like us to know</label>
+              <textarea id="j-notes" name="notes" placeholder="Interests, how you heard about us, whether you would like to help organize events"></textarea>
+            </div>
+            <div class="form-row check">
+              <input id="j-consent" name="consent" type="checkbox" value="yes" required>
+              <label for="j-consent">I agree that the society may store my details and contact me about its activities.</label>
+            </div>
+            <button class="btn btn-dark" type="submit">Send my details</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>West Point</h3>
+          <ul>
+            <li><a href="https://www.westpointaog.org/" rel="noopener">West Point Association of Graduates</a></li>
+            <li><a href="https://sallyport.westpointaog.org/" rel="noopener">Sallyport (graduate network)</a></li>
+            <li><a href="https://www.westpoint.edu/" rel="noopener">United States Military Academy</a></li>
+            <li><a href="https://www.west-point.org/societies/" rel="noopener">Directory of West Point Societies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; 2026 West Point Society of Switzerland. An independent association, not an official entity of the United States Military Academy or the U.S. Army. <a href="privacy.html">Privacy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.textContent = open ? 'Close' : 'Menu';
+      });
+    })();
+  </script>
+</body>
+</html>

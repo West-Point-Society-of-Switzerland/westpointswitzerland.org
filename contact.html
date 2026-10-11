@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | West Point Society of Switzerland</title>
+  <meta name="description" content="Get in touch with the West Point Society of Switzerland.">
+  <meta property="og:title" content="Contact | West Point Society of Switzerland">
+  <meta property="og:description" content="Get in touch with the West Point Society of Switzerland.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://westpointswitzerland.org/contact.html">
+  <meta property="og:url" content="https://westpointswitzerland.org/contact.html">
+  <meta property="og:image" content="https://westpointswitzerland.org/assets/og-image.png">
+  <meta property="og:site_name" content="West Point Society of Switzerland">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="" width="48" height="48">
+        <span class="brand-name">West Point Society of Switzerland</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="switzerland.html">Switzerland</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="gray-line" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Contact</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <h2>Write to us</h2>
+          <p>The form is the best way to reach the society. Messages go to the volunteer leadership, and you will hear back by email.</p>
+        </div>
+        <div>
+          <form class="form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="company">
+            <input type="hidden" name="form-name" value="contact">
+            <p class="honeypot"><label>Leave this field empty: <input name="company"></label></p>
+
+            <div class="form-row">
+              <label for="c-name">Name</label>
+              <input id="c-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="c-subject">Subject</label>
+              <input id="c-subject" name="subject" type="text">
+            </div>
+            <div class="form-row">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" required></textarea>
+            </div>
+            <button class="btn btn-dark" type="submit">Send message</button>
+            <p class="hint">Your message goes to the society's volunteer leadership. See the <a href="privacy.html">privacy notice</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3>West Point</h3>
+          <ul>
+            <li><a href="https://www.westpointaog.org/" rel="noopener">West Point Association of Graduates</a></li>
+            <li><a href="https://sallyport.westpointaog.org/" rel="noopener">Sallyport (graduate network)</a></li>
+            <li><a href="https://www.westpoint.edu/" rel="noopener">United States Military Academy</a></li>
+            <li><a href="https://www.west-point.org/societies/" rel="noopener">Directory of West Point Societies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; 2026 West Point Society of Switzerland. An independent association, not an official entity of the United States Military Academy or the U.S. Army. <a href="privacy.html">Privacy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!btn || !nav) return;
+      btn.addEventListener('click', function () {
+        var open = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.textContent = open ? 'Close' : 'Menu';
+      });
+    })();
+  </script>
+</body>
+</html>
